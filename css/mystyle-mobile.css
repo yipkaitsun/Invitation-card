@@ -1,0 +1,644 @@
+@font-face {
+    font-family: cantarell;
+    src: url(../font/cantarell.woff2);
+}
+
+
+
+@font-face {
+    font-family: italinana;
+    src: url(../font/italinana.woff2);
+}
+
+@font-face {
+    font-family: tenorsans;
+    src: url(../font/tenorsans.woff2);
+}
+
+
+
+
+@media only screen and (max-width:799px) {
+body{
+    margin:0px
+}
+html, body {
+    max-width: 100%;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    position: fixed;
+    right:10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: pink;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    color: #f1f1f1;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    z-index: 3;
+  }
+#slideshow {
+    position: relative;
+    width: calc(100% - 70px);
+    margin-bottom:50px;
+    margin:auto
+}
+
+section[name="slider"] .slider-text {
+    position: relative;
+    right: 80;
+    bottom: 80;
+    width: 552;
+    color: rgba(255,255,255,1);
+    line-height: 1.2;
+    letter-spacing: 0em;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-style: normal;
+    text-align: right;
+   
+}
+
+
+section[name="slider"] .slideshow-container{
+    position: relative;
+  
+}
+
+/* Position the "next button" to the right */
+section[name="slider"].prev {
+	left: 5px;
+	border-radius: 3px 0 0 3px;
+    transform: translateX(-25%);
+}
+/* Next & previous buttons */
+section[name="slider"] .prev,section[name="slider"] .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 10px;
+	margin-top: -22px;
+    color: rgba(202,165,150,1);
+	font-weight: bold;
+	font-size: 13px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+    z-index: 2;
+}
+/* Position the "next button" to the right */
+section[name="slider"] .next {
+	right: 5px;
+	border-radius: 3px 0 0 3px;
+    transform: translateX(25%);
+}
+
+.content-container {
+    display: block;
+    margin: auto;
+    width: max(42%, 800px);
+    text-align: center;
+    max-width: 100%;
+}
+
+
+.grid_container {
+    font-size: 0 !important;
+    
+}
+
+.grid_container > div {
+    font-size: 15px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+    section[name="sidebar"] .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(202, 165, 150, 0.95);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      section[name="sidebar"] .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+      
+
+      
+      section[name="sidebar"] .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      section[name="sidebar"] .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      section[name="sidebar"] .openbtn {
+        position: fixed;
+        right:10px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        color: pink;
+        padding: 10px 15px;
+        border: none;
+      }
+
+      section[name="slider"] .slide {
+        padding-bottom:100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        position: relative;
+      }
+      
+      section[name="sidebar"] .openbtn:hover {
+        color: #f1f1f1;
+      }
+      section[name="sidebar"] .icon {
+            width: 10px;
+            height: 10px;
+            fill: white;
+            display: inline-block;
+            position: absolute;
+            left: 10px;
+            bottom: 80px;
+        }
+      section[name="sidebar"] .icon2 {
+            width: 10px;
+            height: 10px;
+            fill: white;
+            display: inline-block;
+            position: absolute;
+            left: 25px;
+            bottom: 80px;
+        }
+
+    section[name=header]{
+        height:100px; 
+        margin-top: -10px;
+        z-index: 1;
+    }
+    
+    section[name=header] #nav-1 .icon {
+        width: 15px;
+        height: 10px;
+        fill: rgba(210,169,158,1);
+        padding-top: 30px;
+        padding-left: 15px;
+        display: inline-block;
+    }
+    
+    section[name=header] #nav-2 > .icon2{
+        width: 98%; 
+        height: 98%; 
+        position: absolute; 
+        background-repeat: no-repeat;
+        top: -10px; 
+        background-position:top;
+        background-image: url('http://static.showit.co/200/AUfjYuU8SrmHs0bC2vMIYA/83061/marami_weddings_logo_png.png');
+    }
+
+    section[name=about] .grid{
+        width:100%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+   
+
+    section[name=about] .title {
+        width:100%;
+        
+    }
+
+    section[name=about] .title > div {
+        width: 100%;
+        margin-left: auto;
+        color: rgba(215,184,171,1);
+        font-size: 65px;
+        text-align: right;
+        margin-bottom:20px;
+    }
+
+    
+    section[name=about] .image{
+        width: 100%;
+        padding-bottom: 45%;
+        background-size: cover;
+        background-position: 50% 50%;
+
+    }
+
+    section[name=about] .content {
+        width: 100%;
+        color: rgba(202,165,150,1);
+        line-height: 2.2;
+        letter-spacing: 0.03em;
+        font-size: 14px;
+        text-align: justify;
+        font-family: 'Tenor Sans';
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    
+    section[name=about] .about-container{
+        margin-bottom: 15px;
+        font-size: 0;
+    }
+
+    section[name=about] .owl-item.active>.about-container{
+        width:100%
+    }
+
+    section[name=about] .owl-item{
+        max-height: 0;
+    }
+
+    section[name=about] .owl-item.active{
+        max-height: 9999999;
+    }
+
+    section[name=about] .owl-item.active>.about-container .image-container{
+        background-size: cover; 
+        background-position: 50% 50%;
+        transition: opacity 0.5s;
+        padding-bottom:125%;
+        margin-bottom: 45px;
+        position: relative;
+        
+    }
+
+    section[name=about] .owl-item.active>.about-container .image-container:hover{
+        opacity: 0.5;
+        
+    }
+
+    section[name=about] .about-prev {
+        
+            cursor: pointer;
+            position: relative;
+            top: 50%;
+            width: auto;
+            padding: 16px 0px;
+            margin-top: -22px;
+            color: rgba(202,165,150,1);
+            font-weight: bold;
+            font-size: 13px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            z-index: 2;
+            left:0px;
+            display: inline-block;
+            width: 50%;
+            text-align: center;
+         
+     }
+
+
+
+
+    section[name=about] .about-next {
+        
+            cursor: pointer;
+            position: relative;
+            top: 50%;
+            width: auto;
+            padding: 16px 0px;
+            margin-top: -22px;
+            color: rgba(202,165,150,1);
+            font-weight: bold;
+            font-size: 13px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            z-index: 2;
+            right:0px;
+            display: inline-block;
+            width: calc(50% - 1px);
+            text-align: center;
+            border-left: 1px solid;
+     
+         
+     }
+
+
+    section[name=about] .image-container-text {
+        position: absolute;
+        bottom: 60;
+        left: 20;
+        color: white;
+        line-height: 20px;
+        
+    }
+    
+    section[name=about] .owl-about{
+       width:90%;
+       margin:auto;
+       position: relative;
+
+    }
+
+    section[name=slider2] #nav-1 {
+        width: 100%;
+        background-color: #eee5de;
+        height: 440px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    section[name=slider2] .owl-slogan {
+        position: relative;
+        width:90%;
+        margin:auto;
+        
+    }
+
+    section[name=slider2] .sologon-container {
+        padding-top:220px
+    }
+
+    section[name=join] #nav-1 {
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background: rgba(202,165,150,1);
+    }
+    
+	section[name=join] #nav-1 > #type{	
+        color: white;
+        padding-right: 1%;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-family:italinana
+        
+	}
+    section[name=join] .gallery {
+        padding-bottom: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    section[name=join] #nav-1 .icon {
+        width: 15px;
+        height: 15px;
+        fill: white;
+        display: inline-block;
+    }
+
+   section[name=showcase] .showcase-container > .grid_container>div{
+       width: 95%;
+   }
+
+   section[name=showcase] .showcase-container {
+    display: block;
+    margin: auto;
+    width: max(47%, 800px);
+    text-align: center;
+    max-width: 100%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+
+
+section[name=showcase] .showcase {
+    background-color: #eee5de;
+    margin-bottom: 70px;
+    position: relative;
+   
+    margin-top:70px;
+}
+
+section[name=showcase] .detail-container {
+    max-width: 75%;
+}
+
+section[name=showcase] .showcase > div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+
+section[name=showcase] .detail {
+    width: 100%;
+    color: rgba(202,190,181,1);
+    text-transform: uppercase;
+    line-height: 2.5;
+    letter-spacing: 0.15em;
+    font-size: 11px;
+    text-align: center;
+    font-family: 'cantarell';
+    font-weight: 700;
+    font-style: normal;
+    border-left: 1px solid;
+    margin-left: 15px;
+    padding-left: 15px;
+    margin-top:20px;
+    font-size:16px
+}
+section[name=showcase] .showcase-container:nth-child(2n) .image-container{
+    width:75%;
+    background-size: cover;
+    margin-left:auto;
+    margin-right:0px;
+    box-shadow:4px 0px 10px grey
+    
+}
+
+    section[name=showcase] .showcase-container:nth-child(2n) .detail {
+        text-align: right;
+        border-right: 1px solid;
+        border-left: 0px;
+        padding-left: 0px;
+        padding-right:15px;
+    }
+
+
+    section[name=showcase] .showcase-container:nth-child(2n) .detail-container {
+        margin-left: auto;
+        margin-right:30px
+    }
+
+    section[name=showcase] .showcase-container  .detail {
+        text-align: left;
+       
+    }
+
+    section[name=showcase] .showcase-container > .grid_container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    section[name=showcase] .showcase-container:nth-child(2n)> .grid_container {
+        flex-wrap:wrap-reverse
+    }
+
+    section[name=showcase] .image-container {
+        width: 75%;
+        padding-bottom: 414px;
+        background-size: cover;
+        margin-right: auto;
+        box-shadow: 4px 0px 10px grey
+    }
+
+section[name=showcase] .image-container:hover{
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+section[name=showcase] .line {
+    border-top: 1px solid rgba(202,165,150,1);
+    margin: 0px 20px;
+    width:267px;
+    display:none;
+}
+    section[name=footer] .nav_item {
+        display:inline-block;
+        color: white;
+        text-align: center;
+        line-height: 1.8;
+        width: 100%;
+        margin-bottom:15px;
+        font-family:cantarell
+    }
+    section[name=footer] .bottom_item {
+        display:inline-block;
+        color: white;
+        text-align: right;
+        line-height: 1.8;
+        padding-right: 100px;
+    }
+
+    section[name=footer] .footer_container {
+        background: rgba(202,165,150,1);
+        padding-bottom: 100px;
+        text-align: center;
+    }
+    section[name=join] .owl-gallery{
+        display: none;
+    }
+    .slogon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0px);
+        border-left: 1px solid rgba(202,165,150,1);
+        border-right: 1px solid rgba(202,165,150,1);
+        display: inline;
+        width: 100%;
+        padding: 50px 0px;
+        color: rgba(202,165,150,1);
+        line-height: 1.5;
+        letter-spacing: 0em;
+        font-size: 40px;
+        text-align: center;
+        font-family: italinana;
+        font-weight: bold;
+        font-style: normal;
+        letter-spacing: 3px
+    }
+
+    .slogon-container {
+        height: 100%;
+        position: relative;
+    }
+
+    .slogon-author {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0px);
+        color: rgba(202,165,150,1);
+        text-transform: uppercase;
+        line-height: 2;
+        letter-spacing: 0.15em;
+        font-size: 11px;
+        text-align: center;
+        font-family: 'Cantarell';
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+/*  mobile  */
+
+@media only screen and (max-width:799px) {
+
+  .text {font-size: 11px}
+}
