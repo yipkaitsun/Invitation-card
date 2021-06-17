@@ -503,9 +503,6 @@ section[name=showcase] .showcase-container:nth-child(2){
  
 }
 
-section[name=showcase] .showcase-container:nth-child(2n) .detail-container {
-    transform:translateX(25%)
-}
 
 section[name=showcase] .showcase-container:nth-child(3) {
   margin-top:-50px
