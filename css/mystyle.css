@@ -81,7 +81,7 @@ html, body {
 #slideshow {
     position: relative;
    margin: auto;
-    width: 90%;
+    width: calc(100% - 100px);
     margin-bottom:50px;
 }
 
@@ -535,7 +535,7 @@ section[name=showcase] .image-container{
     background-size: cover;
     margin-left:auto;
     box-shadow:4px 0px 10px grey;
-    max-width:315px
+    max-width:315px;
     
 }
 
