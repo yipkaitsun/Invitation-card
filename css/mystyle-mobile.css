@@ -42,6 +42,8 @@ body{
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    font-family: "italinana";
+    text-align: right;
   }
   
   .sidebar a {
@@ -194,7 +196,7 @@ section[name="slider"] .prev {
       section[name="sidebar"] .sidebar .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        right: 0px;
         font-size: 36px;
         margin-left: 50px;
       }
